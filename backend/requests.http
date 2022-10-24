@@ -1,0 +1,42 @@
+### Create new User
+POST http://localhost:3000/user/create
+content-type: application/json
+
+{
+    "username": "bonjai",
+    "name": "Rozaimi Bin Zamahri",
+    "email": "bonjai@gmail.com",
+    "password": "1234",
+    "phone": "0183728922",
+    "skillset": "Football",
+    "hobby": "Guitar"
+}
+
+
+### Find ALL
+GET http://localhost:3000/user/list
+
+### Find User by ID
+GET http://localhost:3000/user/view/1
+
+### Find User by Email
+GET http://localhost:3000/user/viewEmail?email=rozaimi@gmail.com
+
+
+### Delete User by ID
+DELETE http://localhost:3000/user/delete/1
+
+
+### Update current User
+PUT http://localhost:3000/user/update/2
+content-type: application/json
+
+{
+    "username": "bonjai",
+    "name": "Bonjai",
+    "email": "bonjai@gmail.com",
+    "password": "1234",
+    "phone": "0183728922",
+    "skillset": "Fish",
+    "hobby": "Hoki"
+}
